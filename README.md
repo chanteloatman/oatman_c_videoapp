@@ -4,7 +4,7 @@
 ##### A flashback movie application, with movies from the 50s through 90s.
 
 ## Prerequisites
-##### Install node, grunt, express
+##### Install node, grunt, express, handlebars
 
 ## Deployment
 ##### Use npm install
