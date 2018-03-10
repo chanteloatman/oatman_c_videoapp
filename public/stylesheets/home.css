@@ -1,0 +1,22 @@
+/*HOME PAGE STYLING*/
+
+/*VIEW CATEGORIES*/
+#viewerType{background: url('../images/old-bg.png'); padding: 0px 0px 5px 0px; position: absolute; width: 100%;}
+
+#parentMain{width:50%; display:inline-block; float:left; margin-top: 15px;}
+#parentMainPromo{text-align: center; font-family: Arial; font-weight: 700; color: #304a7b;}
+#parentTvIcon{margin-left:20%; margin-right: 20%;}
+#kidsMain{width:50%; display:inline-block; float:right; margin-top: 15px;}
+#kidsMainPromo{text-align: center; font-family: Arial; font-weight: 700; color: #304a7b;}
+#kidsTvIcon{margin-left:20%; margin-right: 20%;}
+
+/*FAV WEEKLY DECADE PICKS*/
+#weeklyTitle{clear:both; margin-top: 402px;}
+#moviesMain{clear:both;}
+#fav50sMain{margin-left:4%;}
+#weeklyFavTitle{padding: 10px 12px 10px 12px; text-align: center; background-color: #6c3c97; color: #fff; font-size: 25px; font-family: Arial; font-weight: 800;}
+#weeklyFavMain{ background-color: #6c3c97; padding: 20px 10px 20px 10px;}
+.homeFavThumb{width:18%;}
+
+.movThumb{width: 15%; cursor: pointer;}
+.movThumb :hover{opacity: .7; cursor: pointer;}

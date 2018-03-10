@@ -1,0 +1,65 @@
+
+
+<!--TO SEE MY STYLING (for home):-->
+<!--Used the doctype / head html structure and css/js link in file so page works-->
+<!--Can see the styling I've done through this file in broswer through http://localhost:8080/oatman_c_flashback/views/home.handlebars -->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<link rel="stylesheet" href="../public/stylesheets/style.css">
+<link rel="stylesheet" href="../public/stylesheets/home.css">
+</head>
+
+<body>
+<h1 class="hide">FlashBack</h1>
+<div id="mainHead">
+  <img src="../public/images/flashback-logomain.png" alt="flashback" id="logoMain">
+  <img src="../public/images/hamburger-menu.png" alt="menu" id="menuIcon">
+</div>
+  <nav id="mainNav"><h2 class="hide">Main Nav</h2>
+  <div id="menu">
+  <ul>
+    <li><a href="#">FLASHBACK HOME</a></li>
+    <li><a href="parents.handlebars">FLASHBACK PARENTS</a></li>
+    <li><a href="main_kids.handlebars">FLASHBACK KIDS</a></li>
+  </ul>
+</div>
+</nav>
+<div id="promoTextMain">Watch Your Favourite Groovy 50s - 60s Movies Here on Flashback!</div>
+<img src="../public/images/the-princess-bride.jpg" alt="the_princess_bride" id="promoImgMain">
+<!--<div id="promoMain">Promo Img</div>-->
+<div id="viewersTitle" class="headings">CHOOSE YOUR MOVIE SORT CATEGORY</div>
+<div id="viewerType">
+    <div id="parentMain">
+       <img src="../public/images/tv-parent-icon.png" alt="parent_tv" id="parentTvIcon">
+       <div id="parentMainPromo"><p>Flash Back PARENTS!</p></div>
+        <a href="parents.handlebars"><div id="flashbackParentButton" class="buttonViews">PARENTS</div></a>
+    </div>
+    <div id="kidsMain">
+       <img src="../public/images/tv-kids-icon.png" alt="flashback" id="kidsTvIcon">
+       <div id="kidsMainPromo"><p>Flash Back Kids!</p></div>
+        <a href="main_kids.handlebars"><div id="flashbackKidsButton" class="buttonViews">KIDS</div></a>
+       </div>
+    </div>
+
+<div id="moviesMain"></div>
+<div id="weeklyTitle" class="headings">WEEKLY FAVOURTIES</div>
+<div id="weeklyFavTitle">This Week's Favourite Decade Picks</div>
+<div id="weeklyFavMain">
+
+  <img src="../public/images/thisweek-fav-50s.jpg" alt="50s_weekly_favourite" id="fav50sMain" class="homeFavThumb">
+  <img src="../public/images/thisweek-fav-60s.jpg" alt="60s_weekly_favourite" id="fav60sMain" class="homeFavThumb">
+  <img src="../public/images/thisweek-fav-70s.jpg" alt="70s_weekly_favourite" id="fav70sMain" class="homeFavThumb">
+  <img src="../public/images/thisweek-fav-80s.jpg" alt="80s_weekly_favourite" id="fav80sMain" class="homeFavThumb">
+  <img src="../public/images/thisweek-fav-90s.jpg" alt="90s_weekly_favourite" id="fav90sMain" class="homeFavThumb">
+</div>
+<div id="mainFoot">
+  <img src="../public/images/roku-logomain.png" alt="roku" id="rokuFoot">
+</div>
+<script src="../public/javascripts/nav.js"></script>
+<script src="../public/javascripts/video.js"></script>
+</body>
+</html>

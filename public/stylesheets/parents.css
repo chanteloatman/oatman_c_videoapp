@@ -1,0 +1,11 @@
+/*PARENTS PAGE STYLING*/
+
+/*ACCOUNT SETTINGS*/
+#parentAccountSettings{ padding: 10px 5px 10px 5px; background-color: #6c3c97; color: #fff; font-family: Arial; font-weight: 500; text-align: center;}
+label{color: #c79cce;}
+
+/*CATEGORIES*/
+#parentMovRec{width: 100%; background: url('../images/old-bg.png'); padding: 10px 0px 5px 0px;}
+#breakfast{margin-left: 12%;}
+#parentTvRec{width: 100%; background: url('../images/old-bg.png'); padding: 10px 0px 5px 0px;}
+#brady{margin-left: 12%;}

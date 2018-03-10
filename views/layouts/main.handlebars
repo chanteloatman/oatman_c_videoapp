@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--LINKING THE STYLESHEETS-->
+<!--Link the stylesheets for home page if on home.handlebars-->
+{{#if home}}   <!--home is the name of handlebars file targeting in views folder-->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/home.css">
+{{/if}}
+<!--Link the stylesheets for kids page if on main_kids.handlebars-->
+{{#if main_kids}}  <!--kids is the name of handlebars file targeting in views folder-->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/kids.css">
+{{/if}}
+<!--Link the stylesheets for parents page if on parents.handlebars-->
+{{#if parents}}  <!--parents is the name of handlebars file targeting in views folder-->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/parents.css">
+{{/if}}
+<!--Link the stylesheets for kids page if on showvid.handlebars-->
+{{#if showvid}}  <!--showvid is the name of handlebars file targeting in views folder-->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/video.css">
+{{/if}}
+<!--TITLE-->
+  <title>{{ title }}</title>
+</head>
+
+<body>
+
+  <!--BODY (the content from the handlebars page you are on will populate here, when on that page)-->
+  {{{ body }}}   <!--body is where the content will appear that is in the handlebars files in views folder, depending on which page you are on, will show that specific handlebars file from view folder-->
+
+    {{#if mainpage}}
+<script src="javascripts/main.js"></script>
+  {{/if}}
+
+    {{#if cms}}
+    <script src="javascripts/cmsHandler.js"></script>
+    {{/if}}
+<!--LINKING THE JAVASCRIPT FILES-->
+<!--Link the javascript files for home page if on home.handlebars-->
+    {{#if home}} <!--home is the name of handlebars file targeting in views folder-->
+    <script src="javascripts/nav.js"></script>
+    <script src="javascripts/video.js"></script>
+    {{/if}}
+<!--Link the javascript files for kids page if on main_kids.handlebars-->
+    {{#if main_kids}} <!--main_kids is the name of handlebars file targeting in views folder-->
+    <script src="javascripts/nav.js"></script>
+    <script src="javascripts/video.js"></script>
+    {{/if}}
+<!--Link the javascript files for parents page if on main_kids.handlebars-->
+        {{#if parents}} <!--parents is the name of handlebars file targeting in views folder-->
+        <script src="javascripts/nav.js"></script>
+        <script src="javascripts/video.js"></script>
+        {{/if}}
+</body>
+</html>

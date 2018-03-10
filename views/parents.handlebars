@@ -1,0 +1,85 @@
+
+<!--Using the doctype / head html structure and css/js link in file so page works-->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Parent Page</title>
+<link rel="stylesheet" href="../public/stylesheets/style.css">
+<link rel="stylesheet" href="../public/stylesheets/parents.css">
+</head>
+
+<body>
+  <h1 class="hide">FlashBack Parent Page</h1>
+  <div id="mainHead">
+  <a href="home.handlebars"><img src="../public/images/flashback-logomain.png" alt="flashback" id="logoMain"></a>
+    <img src="../public/images/hamburger-menu.png" alt="menu" id="menuIcon">
+  </div>
+  <nav id="mainNav"><h2 class="hide">Main Nav</h2>
+  <div id="menu">
+  <ul>
+    <li><a href="home.handlebars">FLASHBACK HOME</a></li>
+    <li><a href="#">FLASHBACK PARENTS</a></li>
+    <li><a href="main_kids.handlebars">FLASHBACK KIDS</a></li>
+  </ul>
+</div>
+</nav>
+  <div id="promoTextMain">Watch Your Favourite Groovy 50s - 60s Movies Here on Flashback!</div>
+  <img src="../public/images/the-princess-bride.jpg" alt="the_princess_bride" id="promoImgMain">
+
+<div id="parentAccountTitle" class="headings">Manage Accounts</div>
+<div id="parentAccountSettings">
+  <h2>KIDS SETTINGS MANAGER</h2>
+  <h3>Hide a Category:</h3>
+    <label>Favourites</label>
+    <input type="checkbox">
+    <label>Funny</label>
+    <input type="checkbox">
+</div>
+
+<div id="parentMovRecTitle" class="headings">My Movie Recommendtions</div>
+<div id="parentMovRec">
+  {{#each videoFav}}
+    <li>
+      <a href="/video/{ title }">
+        <img src="/images/{videos_thumb}.jpg" alt="{videos_title}" id="{videos_id}" class="movThumb">"
+      </a>
+      <h4> {{ videoTitle }}</h4>
+        <p>{{ videoDecade }}</p>
+        <p>{{ videoDetails }}</p>
+    </li>
+    <!--The thumbs that would show:-->
+  <!-- <img src="../public/images/parent-mov-breakfast-club.jpg" alt="the_breakfast_club" id="breakfast" class="movThumb">
+    <img src="../public/images/parent-mov-gremlins.jpg" alt="gremlins" id="gremlins" class="movThumb">
+  <img src="../public/images/parent-mov-grease.jpg" alt="grease" id="grease" class="movThumb">
+  <img src="../public/images/parent-mov-sound-of-music.jpg" alt="music" id="music" class="movThumb">
+  <img src="../public/images/parent-mov-jurassic-park.jpg" alt="park" id="park" class="movThumb"> -->
+{{/each videoFun}}
+</div>
+<div id="parentTvRecTitle" class="headings">My Tv Recommendations</div>
+<div id="parentTvRec">
+  {#each videoTv}
+    <li>
+      <a href="/video/{ title }">
+        <img src="/images/{videos_thumb}.jpg" alt="{videos_title}" id="{videos_id}" class="movThumb">"
+      </a>
+      <h4> {{ videoTitle }}</h4>
+        <p>{{ videoDecade }}</p>
+        <p>{{ videoDetails }}</p>
+    </li>
+    <!--The thumbs that would show:-->
+  <!-- <img src="../public/images/parent-tv-brady-bunch.jpg" alt="the_brady_bunch" id="brady" class="movThumb">
+  <img src="../public/images/parent-tv-gilligans-island.jpg" alt="gilligans_island" id="island" class="movThumb">
+  <img src="../public/images/parent-tv-bewitched.jpg" alt="bewitched" id="bewitched" class="movThumb">
+  <img src="../public/images/parent-tv-happy-days.jpg" alt="happy_days" id="happy" class="movThumb">
+  <img src="../public/images/parent-tv-batman.jpg" alt="batman" id="batman" class="movThumb"> -->
+{{/each}}
+</div>
+  <div id="mainFoot">
+    <img src="../public/images/roku-logomain.png" alt="roku" id="rokuFoot">
+  </div>
+  <script src="../public/javascripts/nav.js"></script>
+  <script src="../public/javascripts/video.js"></script>
+</body>
+</html>

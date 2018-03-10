@@ -1,0 +1,34 @@
+
+<!--HEADER-->
+<div id="mainHead">
+  <img src="images/flashback-logomain.png" alt="flashback" id="logoMain">
+</div>
+<!--VIDEO-->
+<div id="promoTextMain">Movie Title Here (use the {{ title }} format)</div>
+<!-- <video width="100%">
+<source src="videos/the_princess_bride.mp4" id="video" controls>
+</video> -->
+<!--VIDEO CONTROLS-->
+<div id="videoControls">
+  <!--Play--><img src="images/play.png" alt="play" id="playbutton">
+  <!--Seek--><input type="range" min="0" max="1" step="0.2" value="1" id="seek">
+  <!--Volume--><input type="range" min="0" max="1" step="0.1" value="1" id="volume">
+</div>
+
+<!--Displaying each video-->
+<ul>
+  {{#each video}}
+    <li>
+      <img src="{{ videoThumb }}" alt="{{ videoTitle }}">
+      <h4>{{ videoTitle }}</h4>
+      <p>{{ videoDecade }}</p>
+      <p>{{ videoDetails }}</p>
+    </li>
+  {{/each}}
+</ul>
+
+<div id="backVidButton" class="headings"><a href="home.html">Back to Home Page</a></div>
+<!--FOOTER-->
+<div id="mainFoot">
+  <img src="images/roku-logomain.png" alt="roku" id="rokuFoot">
+</div>
