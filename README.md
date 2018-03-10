@@ -6,11 +6,11 @@
 ## Prerequisites
 ##### Install node, grunt, express
 
-##Deployment
+## Deployment
 ##### Use npm install
 ##### Using local port 8080, for using XAMPP to get server to work / view on at home computer
 
-##Built with
+## Built with
 ##### Node.js
 ##### grunt
 ##### express
